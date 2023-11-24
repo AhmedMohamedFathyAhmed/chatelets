@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Vujahday+Script&display=swap');
+
+body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.topnav {
+    /* background-color: #333; */
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    font-size: large;
+    font-weight: 600;
+}
+
+.chatelet{
+    color: white !important;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  margin: auto;
+  color: #f2f2f2 !important;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* .nave{
+    margin-left: 185px;
+    background-color: #b335c5;
+} */
+/* Change the color of links on hover */
+
+.topnav a:hover {
+  /* background-color: #ddd; */
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+  padding-right: 50px;
+}
+
+/* end nav bar */
+
+
+
+
+
+
+
+
+.icon-mix{
+    font-size: 25px;
+    color: black;
+}
+
+/* icon setting  */
+
+.setting-box{
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    background-color: white;
+    min-height: 100vh;
+    z-index: 1000;
+    transition: 1s;
+}
+
+.setting-box-icon{
+    
+    position: absolute;
+    top: 55px;
+    right: -28px;
+    background-color: white;
+    width: 28px;
+    height: 28px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+
+}
+.setting-box-icon i{
+    color: black;
+    font-size: 17px;
+}
+/* add class in js */
+.line{
+    width: 170px;
+    height: 1px;
+    background-color: rgb(49 45 45 / 20%);
+    margin-left: 20px;
+}
+.colors{
+    background-color: blanchedalmond;
+    display: flex;
+}
+.color-gold{
+    width: 25px;
+    height: 25px;
+    background-color: #a17110;
+    border-radius: 50%;
+    margin-right: 5px;
+
+}
+
+.color-bnafsge{
+    width: 25px;
+    height: 25px;
+    background-color: #b335c5;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.color-green{
+
+    width: 25px;
+    height: 25px;
+    background-color: rgb(33 231 154);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.color-orange{
+    width: 25px;
+    height: 25px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.color-blue{
+
+    width: 25px;
+    height: 25px;
+    background-color: #17a2b8d4;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+/*  */
+
+.setting-box.open{
+    left: -200px;
+
+}
+
+
+
+
+
+.section{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+}
+
+.bg-img{
+    min-height: 100vh;
+    background-color: black;
+    background-image: url(../ui/hg.jpg);
+    background-size: 100% 100%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+}
+
+h1{
+    color: white;
+}
+h1::after{
+    content: "";
+    animation: hambozo infinite 5s;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+
+/* @keyframes hambozo{
+
+    0%{content:"Mu"}
+    10%{content:"Muh"}
+    15%{content:"Muha"}
+    20%{content:"Muhm"}
+    30%{content:"Muhm"}
+    34%{content:"Muhma"}
+    38%{content:"Muhmad"}
+    44%{content:"Muhmad P"}
+    48%{content:"Muhmad Pe"}
+    53%{content:"Muhmad Pea"}
+    59%{content:"Muhmad Peac"}
+    64%{content:"Muhmad Peace"}
+    69%{content:"Muhmad Peace b"}
+    73%{content:"Muhmad Peace be"}
+    79%{content:"Muhmad Peace be u"}
+    83%{content:"Muhmad Peace be up"}
+    87%{content:"Muhmad Peace be upo"}
+    90%{content:"Muhmad Peace be upon"}
+    93%{content:"Muhmad Peace be upon h"}
+    96%{content:"Muhmad Peace be upon hi"}
+    100%{content:"Muhmad Peace be upon him"}
+} */
+
+
+/* icon social */
+
+.social-media{
+    display: flex;
+    width: 180px;
+    height: 100px;
+    margin: auto;
+
+}
+
+.social-media .cover-icon{
+    margin-right: 20px;
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #b9cbd07d;
+    font-size: 25px;
+}
+
+
+.social-media .cover-icon .fab{
+     color: black;
+}
+
+.paragraph{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Vujahday Script', cursive;
+    font-size: 21px;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:554px){
+
+      
+        .topnav {
+            /* background-color: #333; */
+            width: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            height: 50px;
+            width: 100%;
+            font-size: large;
+            font-weight: 200;
+            margin-left: -18px;
+
+        }
+        .topnav a {
+            float: left;
+            color: #f2f2f2 !important;
+            text-align: center;
+            padding: 15px 8px;
+            text-decoration: none;
+            font-size: 10px;
+          }
+          
+          .nave{
+            margin-left: 0px;
+          }
+        /* background-color: #8e7754; */
+}
+
+
+
+/* 
+
+@media(max-width:568px)
+{
+    .content{
+      margin-left: 35%;
+      box-sizing: border-box;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .setting-box{
+        width: 160px;
+        background-color: white;
+        min-height: 100vh;
+        transition: 1s;
+    }
+} */
+
